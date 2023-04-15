@@ -1,0 +1,32 @@
+<div>
+    <h1 class="text-align">Editar</h1>
+    <form (ngSubmit)="alterar()">
+        <input 
+            class="form-control m-2" 
+            type="text" id="nome" 
+            placeholder="Informe nome"
+            name="nome"
+            [(ngModel)]="contato.nome"
+          />
+        
+        <input 
+           class="form-control m-2" 
+           type="text" id="email" 
+           placeholder="Informe email"
+           [(ngModel)]="contato.email"
+           name="email"
+        />
+        
+        <input 
+           class="form-control m-2" 
+           type="text" id="celular" 
+           placeholder="Informe celular"
+           [(ngModel)]="contato.celular"
+           name="celular"
+        />
+        
+        <button class="btn btn-outline-primary">Gravar</button>
+        
+    </form>    
+    <label class="col-form-label mt-2">{{ msg }}</label>
+</div> 
