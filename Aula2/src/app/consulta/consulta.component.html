@@ -16,7 +16,7 @@
                 <td>{{contato.celular}}</td>
                 <td>
                     <a [routerLink]="['/edicao',contato.email]">Editar</a>
-                    <button class="nav-item" (click)="excluir(contato.email)">Excluir</button>
+                    <input type="button" class="nav-link" (click)="excluir(contato.email)" value="exlcuir" />
                 </td>
             </tr>
         </tbody>        
