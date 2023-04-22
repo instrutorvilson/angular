@@ -1,0 +1,23 @@
+AuthGuart
+Tela de login
+Storage
+
+Validação de formularios
+proteção de rotas
+
+1º passo criar component Login
+2º criar service Authlogin
+
+
+cadastro de contatos
+cadastro de login
+
+ cadastro de compromissos
+ -> local
+ -> data
+ -> hora
+ -> contato
+
+Criar CRUD compromissos e proteger para que somente a consulta seja realizada por que não está logado.
+
+npm install jwt-decode

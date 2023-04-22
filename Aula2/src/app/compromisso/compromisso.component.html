@@ -1,0 +1,43 @@
+<div>
+    <form [formGroup]="compromissoForm"
+     (ngSubmit)="enviar()"
+    >
+       <input type="text"
+         placeholder="Informe local"
+         formControlName="local"
+         class="form-control"
+       />
+
+       <input type="date"
+         placeholder="Informe a data"
+         formControlName="data"
+         class="form-control"
+       />
+
+       <input type="time"
+       placeholder="Informe a hora"
+       formControlName="hora"
+       class="form-control"
+     />
+
+     <input type="text"
+       placeholder="Informe o contato"
+       formControlName="contato"
+       class="form-control"
+     />
+
+     <select
+        formControlName="contato"  
+        class="form-select"      
+     > 
+     <option *ngFor="let contato of contatos"
+       value="{{contato.nome}}"
+     >
+        {{contato.nome}}
+     </option>
+     </select>
+
+       <button class="btn btn-primary">Salvar</button>
+    </form>
+</div>
+ 
