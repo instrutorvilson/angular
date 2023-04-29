@@ -11,7 +11,10 @@ export class CadastroComponent {
   constructor(private service:ContatoService){}
 
   enviar(value:string){
-    this.msg =  this.service.inserir(value)
+    this.service.inserir(value).subscribe(ct => {
+      if(ct != null)
+        this.msg = "Contato inserido com sucesso."
+    })
   }
 
 }

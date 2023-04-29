@@ -10,6 +10,7 @@ import { EdicaoComponent } from './edicao/edicao.component';
 import { LoginComponent } from './login/login.component';
 import { CompromissoComponent } from './compromisso/compromisso.component';
 import { ErrorsComponent } from './errors/errors.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ErrorsComponent } from './errors/errors.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
