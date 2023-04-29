@@ -1,0 +1,35 @@
+<div>
+    <form #f="ngForm" (ngSubmit)="enviar(f.value)">
+        <input 
+           type="text"
+           class="form-control m-2"
+           placeholder="Informe nome" 
+           ngModel
+           name="nome"          
+        />
+        <input 
+           type="email"
+           class="form-control m-2"
+           placeholder="Informe email" 
+           ngModel
+           name="email"           
+        />
+        <input 
+           type="password"
+           class="form-control m-2"
+           placeholder="Informe senha" 
+           ngModel
+           name="senha"           
+        />
+        <select
+          class="form-select m-2"
+          ngModel
+          name="perfil"
+        >
+          <option *ngFor="let p of perfis"> {{p}}</option>
+        </select>
+        <button class="btn btn-primary m2">
+            Gravar
+        </button>
+    </form>
+</div>

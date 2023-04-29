@@ -1,0 +1,19 @@
+<div class="container">
+    <h1 class="text-center">Login</h1>
+    <form #f="ngForm" (ngSubmit)="logar(f.value)">
+        <div>
+            <input type="text" class="form-control m-2" placeholder="informe email"
+            name="email"
+            ngModel
+            
+            />
+
+            <input type="password" class="form-control m-2" placeholder="informe senha" 
+            name="senha"
+            ngModel
+            />
+
+            <button class="btn btn-primary mt-2">Logar</button>
+        </div>
+    </form>
+</div>
