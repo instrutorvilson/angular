@@ -17,7 +17,7 @@ export class ConsultaComponent implements OnInit{
   }  
   
   consultar(){
-    this.contatos = this.service.consultar();
+    this.service.consultar().subscribe( cts => this.contatos = cts)
   }
 
   excluir(email:string){
