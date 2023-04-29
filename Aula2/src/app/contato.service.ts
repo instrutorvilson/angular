@@ -33,10 +33,7 @@ export class ContatoService {
    )    
   }
 
-  logar(usuario:any){
-    let url = 'https://aula-node-vfhi.onrender.com/usuarios/login'
-    return this.http.post(url, usuario)
-  }
+  
   consultar(){
     let url = 'https://aula-node-vfhi.onrender.com/contatos'
     return this.http.get(url)

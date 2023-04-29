@@ -10,7 +10,9 @@ import { EdicaoComponent } from './edicao/edicao.component';
 import { LoginComponent } from './login/login.component';
 import { CompromissoComponent } from './compromisso/compromisso.component';
 import { ErrorsComponent } from './errors/errors.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+import { LogoutComponent } from './logout/logout.component'
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { HttpClientModule } from '@angular/common/http'
     EdicaoComponent,
     LoginComponent,
     CompromissoComponent,
-    ErrorsComponent
+    ErrorsComponent,
+    UsuariosComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,

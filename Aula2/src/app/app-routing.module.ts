@@ -7,6 +7,8 @@ import { AuthLoginService } from './auth-login.service';
 import { LoginComponent } from './login/login.component';
 import { CompromissoComponent } from './compromisso/compromisso.component';
 import { ErrorsComponent } from './errors/errors.component';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+import { LogoutComponent } from './logout/logout.component';
 
 const routes: Routes = [
   { 
@@ -19,13 +21,12 @@ const routes: Routes = [
     component:CompromissoComponent,
     canActivate:[AuthLoginService]
   },
-  {
-    path:'login', component: LoginComponent
-  },
-  
+  { path:'usuario', component: UsuariosComponent},
+  { path:'login', component: LoginComponent}, 
+  { path:'logout', component: LogoutComponent}, 
   { path:'consulta', component:ConsultaComponent},
   { path:'edicao/:pemail', component:EdicaoComponent},
-  { path:'erros', component:ErrorsComponent}
+  { path:'erros/:msg', component:ErrorsComponent}
   
 ];
 
